@@ -1,8 +1,20 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.nav)
 }
+
+val localProperties = rootProject.file("local.properties")
+val properties = Properties()
+
+if (localProperties.exists()) {
+    localProperties.inputStream().use { properties.load(it) }
+}
+
+val apiKey = properties.getProperty("API_KEY")
+
 
 android {
     namespace = "com.example.gps"
@@ -14,8 +26,8 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["API_KEY"] = apiKey
     }
 
     buildTypes {
