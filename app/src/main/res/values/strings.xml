@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GPS</string>
+    <string name="title_home">GPSAPP</string>
+    <string name="title_maps">Mapa</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="enviar_ubicaci_n">Enviar Ubicación</string>
+</resources>

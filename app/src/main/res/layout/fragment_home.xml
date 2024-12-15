@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="0dp">
+
+        <!-- TopAppBar equivalent -->
+
+        <!-- Spacer -->
+
+        <!-- Main Column Layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Animated Button -->
+
+            <!-- Ver Mapa Button -->
+
+
+            <!-- Cerrar Sesión Button
+
+            <Button
+                android:id="@+id/sendLocationButton"
+                style="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="@null"
+                tools:ignore="UseCompoundDrawables"
+                android:gravity="center"
+                android:text="@string/enviar_ubicaci_n"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+                -->
+
+            <FrameLayout
+                android:id="@+id/sendLocationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:gravity="center">
+
+                <!-- Fondo personalizado -->
+                <ImageView
+                    android:id="@+id/buttonBackground"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/circle_button"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/buttonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Compartir"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

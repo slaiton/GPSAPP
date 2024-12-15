@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Círculo más grande (amarillo) -->
+    <item
+        android:width="280dp"
+        android:height="280dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/yellow"
+                android:textColor="@color/black"/>
+        </shape>
+    </item>
+
+    <item
+        android:width="270dp"
+        android:height="270dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>
